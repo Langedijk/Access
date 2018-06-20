@@ -8,4 +8,5 @@ How to:
 * Add Module to Accesss (for example "basCoordinate") with function fRD2WGS84 to convert RD coördinates to Latitude and Longitude.
 * In a query add a field (for example "LatLon") in which coordinates are converted to WGS 84 with function fRD2WGS84.
 * Formula in query for LatLon. [X] and [Y] are the field in the query which have the X an Y values:
+
 LatLon: IIf(Len([X])<>5;"X no 5 positions";IIf(Len([Y])<>6;"Y no 6 positions";IIf(IsNull([X]);"";IIf(IsNull([Y]);"";fRD2WGS84([X];[Y])))))
