@@ -3,6 +3,7 @@
 Hi, this is my place to save Access VB stuff, so I can use it in future projects!
 
 RD2WGS84: converts RD (Rijksdriehoek-) coördinates to WGS84
+
 How to:
 * Add Module to Accesss (for example "basCoordinate") with function fRD2WGS84 to convert RD coördinates to Latitude and Longitude.
 * In a query add a field (for example "LatLon") in which coordinates are converted to WGS 84 with function fRD2WGS84.
